@@ -79,3 +79,28 @@ while True:
         nota_la()
     elif contador == 7:
         nota_si()
+
+"""
+Ideia de fazer um menu com 2 opções, uma de aprendizagem que ensina sobre as notas, e um modo infinito
+em que o jogador irá conseguir uma pontuação
+"""
+# def menu():
+#     while True:
+#         print(
+#             'BEM VINDO AO GAME HON MUSICAS'
+#             '\nSELECIONE A OPÇÃO QUE DESEJA USAR'
+#             '\n[1] MODO APRENDIZAGEM'
+#             '\n[2] MODO INFINITO'
+#             '\n[3] SAIR'
+#         )
+
+#         op = input('OPÇÃO: ')
+#         if op == '1':
+#             aprendizagem()
+#         if op == '2':
+#             infinito()
+#         if op == '3':
+#             print ('SAINDO DO JOGO')
+#             print ('VOCÊ SAIU')
+#             break
+# menu()
