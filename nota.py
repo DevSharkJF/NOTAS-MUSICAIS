@@ -103,44 +103,60 @@ def nota_si():
                 '\n!Você Errou, Tente Novamente!'
             )
 
-while True:
-    contador = int(random.random() * 6)
-    if contador == 0:
-        nota_do()
-    elif contador == 1:
-        nota_re()
-    elif contador == 2:
-        nota_mi()
-    elif contador == 3:
-        nota_fa()
-    elif contador == 4:
-        nota_sol()
-    elif contador == 5:
-        nota_la()
-    elif contador == 7:
-        nota_si()
+random.seed()
+
+def infinito():
+    while True:
+        contador = int(random.random() * 6)
+        if contador == 0:
+            nota_do()
+        elif contador == 1:
+            nota_re()
+        elif contador == 2:
+            nota_mi()
+        elif contador == 3:
+            nota_fa()
+        elif contador == 4:
+            nota_sol()
+        elif contador == 5:
+            nota_la()
+        elif contador == 7:
+            nota_si()
+
+def aprendizagem():
+    print('AINDA EM CONSTRUÇÃO')
+
+def menu():
+    while True:
+        print(
+        'BEM VINDO AO GAME HON MUSICAS'
+        '\nSELECIONE A OPÇÃO QUE DESEJA USAR'
+        '\n[1] MODO APRENDIZAGEM'
+        '\n[2] MODO INFINITO'
+        '\n[3] SAIR'
+        )
+
+        op = input('OPÇÃO: ')
+        if op == '1':
+            os.system('cls')
+            aprendizagem()
+        if op == '2':
+            os.system('cls')
+            infinito()
+        if op == '3':
+            os.system('cls')
+            print('SAINDO DO SISTEMA')
+            time.sleep(3)
+
+            os.system('cls')
+            print('VOCÊ SAIU')
+            break
+
+time.sleep(2)
+os.system('cls')
+menu()
 
 """
 Ideia de fazer um menu com 2 opções, uma de aprendizagem que ensina sobre as notas, e um modo infinito
 em que o jogador irá conseguir uma pontuação
 """
-# def menu():
-#     while True:
-#         print(
-#             'BEM VINDO AO GAME HON MUSICAS'
-#             '\nSELECIONE A OPÇÃO QUE DESEJA USAR'
-#             '\n[1] MODO APRENDIZAGEM'
-#             '\n[2] MODO INFINITO'
-#             '\n[3] SAIR'
-#         )
-
-#         op = input('OPÇÃO: ')
-#         if op == '1':
-#             aprendizagem()
-#         if op == '2':
-#             infinito()
-#         if op == '3':
-#             print ('SAINDO DO JOGO')
-#             print ('VOCÊ SAIU')
-#             break
-# menu()
