@@ -1,67 +1,107 @@
+# MODO INFINITO
+# os.system('cls')
+# time.sleep(1)
 import random
+import os
+import time
 
 def nota_do():
-    resposta_do = input('Qual a nota corresponde a C? ')
-    if resposta_do.lower() == 'dó':
-        print('CORRETO')
-    else:
-        while resposta_do != 'dó':
-            print('Errado')
-            resposta_do = input('Tente Novamente: ')
+    while True:
+        resposta_do = input('Qual a nota corresponde a C?')
+        os.system('cls')
+
+        if resposta_do.lower() == 'dó' or resposta_do.lower() == 'do':
+            print('✅PARABÉNS, VOCÊ ACERTOU!✅')
+            break
+        elif resposta_do.lower() != 'dó' or resposta_do.lower() != 'do':
+            print(
+                ''
+                '\n!Você Errou, Tente Novamente!'
+            )
 
 def nota_re():
-    resposta_re = input('Qual a nota correspondente a D? ')
-    if resposta_re.lower() == 'ré':
-        print('CORRETO')
-    else:
-        while resposta_re != 'ré':
-            print('ERRADO')
-            resposta_re = input('TENTE NOVAMENTE: ')
+    while True:
+        resposta_re = input('Qual a nota correspondente a D?')
+        os.system('cls')
+
+        if resposta_re.lower() == 'ré' or resposta_re.lower() == 're':
+            print('✅PARABÉNS, VOCÊ ACERTOU!✅')
+            break
+        elif resposta_re.lower() != 'ré' or resposta_re.lower() != 're':
+            print(
+                ''
+                '\n!Você Errou, Tente Novamente!'
+            )
 
 def nota_mi():
-    resposta_re = input('Qual a nota correspondente a E? ')
-    if resposta_re.lower() == 'mi':
-        print('CORRETO')
-    else:
-        while resposta_re != 'mi':
-            print('ERRADO')
-            resposta_re = input('TENTE NOVAMENTE: ')
+    while True:
+        resposta_mi = input('Qual a nota correspondente a E?')
+        os.system('cls')
+
+        if resposta_mi.lower() == 'mi':
+            print('✅PARABÉNS, VOCÊ ACERTOU!✅')
+            break
+        elif resposta_mi.lower() != 'mi':
+            print(
+                ''
+                '\n!VOCÊ ERROU, TENTE NOVAMENTE!'
+            )
 
 def nota_fa():
-    resposta_re = input('Qual a nota correspondente a F? ')
-    if resposta_re.lower() == 'fa':
-        print('CORRETO')
-    else:
-        while resposta_re != 'fa':
-            print('ERRADO')
-            resposta_re = input('TENTE NOVAMENTE: ')
+    while True:
+        resposta_fa = input('Qual a nota correspondente a F?')
+        os.system('cls')
+
+        if resposta_fa.lower() == 'fa':
+            print('✅PARABÉNS, VOCÊ ACERTOU!✅')
+            break
+        elif resposta_fa.lower() != 'fa':
+            print(
+                ''
+                '\n!Você Errou, Tente Novamente!'
+            )
 
 def nota_sol():
-    resposta_re = input('Qual a nota correspondente a G? ')
-    if resposta_re.lower() == 'sol':
-        print('CORRETO')
-    else:
-        while resposta_re != 'sol':
-            print('ERRADO')
-            resposta_re = input('TENTE NOVAMENTE: ')
+    while True:
+        resposta_sol = input('Qual a nota correspondente a G?')
+        os.system('cls')
+
+        if resposta_sol.lower() == 'sol':
+            print('✅PARABÉNS, VOCÊ ACERTOU!✅')
+            break
+        elif resposta_sol.lower() != 'sol':
+            print(
+                ''
+                '\n!Você Errou, Tente Novamente!'
+            )
 
 def nota_la():
-    resposta_re = input('Qual a nota correspondente a A? ')
-    if resposta_re.lower() == 'la':
-        print('CORRETO')
-    else:
-        while resposta_re != 'la':
-            print('ERRADO')
-            resposta_re = input('TENTE NOVAMENTE: ')
+    while True:
+        resposta_la = input('Qual a nota correspondente a A?')
+        os.system('cls')
+
+        if resposta_la.lower() == 'la':
+            print('✅PARABÉNS, VOCÊ ACERTOU!✅')
+            break
+        elif resposta_la.lower() != 'la':
+            print(
+                ''
+                '\n!Você Errou, Tente Novamente!'
+            )
 
 def nota_si():
-    resposta_re = input('Qual a nota correspondente a B? ')
-    if resposta_re.lower() == 'si':
-        print('CORRETO')
-    else:
-        while resposta_re != 'si':
-            print('ERRADO')
-            resposta_re = input('TENTE NOVAMENTE: ')
+    while True:
+        resposta_si = input('Qual a nota correspondente a B?')
+        os.system('cls')
+
+        if resposta_si.lower() == 'si':
+            print('✅PARABÉNS, VOCÊ ACERTOU!✅')
+            break
+        elif resposta_si.lower() != 'si':
+            print(
+                ''
+                '\n!Você Errou, Tente Novamente!'
+            )
 
 while True:
     contador = int(random.random() * 6)
