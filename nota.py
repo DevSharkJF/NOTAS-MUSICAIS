@@ -9,13 +9,16 @@ def nota_do():
 
         if resposta_do.lower() == 'dó' or resposta_do.lower() == 'do':
             print('PROCESSANDO...')
-            time.sleep(1.5)
+            time.sleep(1.0)
             print('✅PARABÉNS, VOCÊ ACERTOU!✅')
             time.sleep(1.3)
             os.system('cls')
             break
         elif resposta_do.lower() != 'dó' or resposta_do.lower() != 'do':
-            print('!Você Errou, Tente Novamente!')
+            print('PROCESSANDO...')
+            time.sleep(1.0)
+            os.system('cls')
+            print('❌ Você Errou, Tente Novamente! ❌\n')
 
 def nota_re():
     while True:
@@ -24,13 +27,16 @@ def nota_re():
 
         if resposta_re.lower() == 'ré' or resposta_re.lower() == 're':
             print('PROCESSANDO...')
-            time.sleep(1.5)
+            time.sleep(1.0)
             print('✅PARABÉNS, VOCÊ ACERTOU!✅')
             time.sleep(1.3)
             os.system('cls')
             break
         elif resposta_re.lower() != 'ré' or resposta_re.lower() != 're':
-            print('!Você Errou, Tente Novamente!')
+            print('PROCESSANDO...')
+            time.sleep(1.0)
+            os.system('cls')
+            print('❌ Você Errou, Tente Novamente! ❌\n')
 
 def nota_mi():
     while True:
@@ -39,13 +45,16 @@ def nota_mi():
 
         if resposta_mi.lower() == 'mi':
             print('PROCESSANDO...')
-            time.sleep(1.5)
+            time.sleep(1.0)
             print('✅PARABÉNS, VOCÊ ACERTOU!✅')
             time.sleep(1.3)
             os.system('cls')
             break
         elif resposta_mi.lower() != 'mi':
-            print('!Você Errou, Tente Novamente!')
+            print('PROCESSANDO...')
+            time.sleep(1.0)
+            os.system('cls')
+            print('❌ Você Errou, Tente Novamente! ❌\n')
 
 def nota_fa():
     while True:
@@ -54,13 +63,16 @@ def nota_fa():
 
         if resposta_fa.lower() == 'fa':
             print('PROCESSANDO...')
-            time.sleep(1.5)
+            time.sleep(1.0)
             print('✅PARABÉNS, VOCÊ ACERTOU!✅')
-            time.sleep(1.3)
+            time.sleep(1.5)
             os.system('cls')
             break
         elif resposta_fa.lower() != 'fa':
-            print('!Você Errou, Tente Novamente!')
+            print('PROCESSANDO...')
+            time.sleep(1.0)
+            os.system('cls')
+            print('❌ Você Errou, Tente Novamente! ❌\n')
 
 def nota_sol():
     while True:
@@ -69,13 +81,16 @@ def nota_sol():
 
         if resposta_sol.lower() == 'sol':
             print('PROCESSANDO...')
-            time.sleep(1.5)
+            time.sleep(1.0)
             print('✅PARABÉNS, VOCÊ ACERTOU!✅')
             time.sleep(1.3)
             os.system('cls')
             break
         elif resposta_sol.lower() != 'sol':
-            print('!Você Errou, Tente Novamente!')
+            print('PROCESSANDO...')
+            time.sleep(1.0)
+            os.system('cls')
+            print('❌ Você Errou, Tente Novamente! ❌\n')
 
 def nota_la():
     while True:
@@ -84,13 +99,16 @@ def nota_la():
 
         if resposta_la.lower() == 'la':
             print('PROCESSANDO')
-            time.sleep(1.5)
+            time.sleep(1.0)
             print('✅PARABÉNS, VOCÊ ACERTOU!✅')
             time.sleep(1.3)
             os.system('cls')
             break
         elif resposta_la.lower() != 'la':
-            print('!Você Errou, Tente Novamente!')
+            print('PROCESSANDO...')
+            time.sleep(1.0)
+            os.system('cls')
+            print('❌ Você Errou, Tente Novamente! ❌\n')
 
 def nota_si():
     while True:
@@ -99,16 +117,18 @@ def nota_si():
 
         if resposta_si.lower() == 'si':
             print('PROCESSANDO')
-            time.sleep(1.5)
+            time.sleep(1.0)
             print('✅PARABÉNS, VOCÊ ACERTOU!✅')
             time.sleep(1.3)
             os.system('cls')
             break
         elif resposta_si.lower() != 'si':
-            print('!Você Errou, Tente Novamente!')
+            print('PROCESSANDO...')
+            time.sleep(1.0)
+            os.system('cls')
+            print('❌ Você Errou, Tente Novamente! ❌\n')
 
 random.seed()
-
 def infinito():
     while True:
         contador = int(random.random() * 6)
@@ -133,11 +153,11 @@ def aprendizagem():
 def menu():
     while True:
         print(
-        'BEM VINDO AO GAME HON MUSICAS'
-        '\nSELECIONE A OPÇÃO QUE DESEJA USAR'
-        '\n[1] MODO APRENDIZAGEM'
-        '\n[2] MODO INFINITO'
-        '\n[3] SAIR'
+        'BEM VINDO AO GAME HON MUSICAS\n'
+        '\nSELECIONE UMA DAS OPÇÕES ABAIXO'
+        '\n[1] MODO APRENDIZAGEM 🎼'
+        '\n[2] MODO INFINITO ♾️'
+        '\n[3] SAIR ⚠️'
         )
 
         op = input('OPÇÃO: ')
@@ -151,10 +171,10 @@ def menu():
 
         if op == '3':
             os.system('cls')
-            print('SAINDO DO SISTEMA')
-            time.sleep(3)
+            print('🚶🏻SAINDO DO JOGO...')
+            time.sleep(2.5)
             os.system('cls')
-            print('VOCÊ SAIU')
+            print('❗VOCÊ SAIU❗')
             break
 
 time.sleep(1.5)
@@ -162,8 +182,8 @@ os.system('cls')
 menu()
 
 """
-Ideia de fazer um menu com 2 opções, uma de aprendizagem que ensina sobre as notas, e um modo infinito
-em que o jogador irá conseguir uma pontuação.
-Aprendizagem: Ainda pensando como fazer (Talvez mostrar uma tabela antes da pergunta, ou somente uma tabela para o usuário analisar)
-Infinito: falta sistema de pontuação
+IDEIAS
+1) Modo de Aprendizagem - Ensina o usuário sobre a relação das notas (Tabela antes da pergunta / somente uma tabela de vizualização)
+2) Modo Hardcore - Roda um loop em que conforme o usuário acerta as notas, ele acumula nota, caso erre,
+o loop se quebra mostrando o record.
 """
