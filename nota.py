@@ -98,7 +98,7 @@ def nota_la():
         os.system('cls')
 
         if resposta_la.lower() == 'la':
-            print('PROCESSANDO')
+            print('PROCESSANDO...')
             time.sleep(1.0)
             print('✅PARABÉNS, VOCÊ ACERTOU!✅')
             time.sleep(1.3)
@@ -116,7 +116,7 @@ def nota_si():
         os.system('cls')
 
         if resposta_si.lower() == 'si':
-            print('PROCESSANDO')
+            print('PROCESSANDO...')
             time.sleep(1.0)
             print('✅PARABÉNS, VOCÊ ACERTOU!✅')
             time.sleep(1.3)
@@ -148,22 +148,24 @@ def infinito():
             nota_si()
 
 def aprendizagem():
-    print('AINDA EM CONSTRUÇÃO\n')
+    print('👷🏻AINDA EM CONSTRUÇÃO🔨\n')
 
 def menu():
     while True:
         print(
-        'BEM VINDO AO GAME HON MUSICAS\n'
-        '\nSELECIONE UMA DAS OPÇÕES ABAIXO'
+        '============================= 🎶BEM VINDO AO GAME HON MUSICAS🎵 =============================\n'
+        '\nSELECIONE UMA DAS OPÇÕES ABAIXO:'
         '\n[1] MODO APRENDIZAGEM 🎼'
         '\n[2] MODO INFINITO ♾️'
         '\n[3] SAIR ⚠️'
         )
 
-        op = input('OPÇÃO: ')
+        op = input('\n⏩ OPÇÃO: ')
         if op == '1':
             os.system('cls')
             aprendizagem()
+            time.sleep(2)
+            os.system('cls')
 
         if op == '2':
             os.system('cls')
@@ -172,7 +174,7 @@ def menu():
         if op == '3':
             os.system('cls')
             print('🚶🏻SAINDO DO JOGO...')
-            time.sleep(2.5)
+            time.sleep(2)
             os.system('cls')
             print('❗VOCÊ SAIU❗')
             break
