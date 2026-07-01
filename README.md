@@ -1,10 +1,12 @@
 # NOTAS-MUSICAIS
-Um pequeno sistema desenvolvido em Python para execução no terminal, com o objetivo de ensinar notas musicais por meio de um jogo simples e interativo.
+Um pequeno projeto que roda em terminal, com o objetivo de ensinar notas musicais por meio de um jogo simples e interativo, parecido com jogos mobile.
 
-# Código de Cores
-O estilo de formatação pode ser feito por:
+## Código de Cores
+Abaixo há alguns códigos de cores que podem ser usados no terminal, para ter uma melhor estilização:
 
-Estilo de Formatação
+<center>
+
+### Estilo de Formatação
 | Código | Efeito                  |
 | ------ | ----------------------- |
 | 0      | Reset (volta ao normal) |
@@ -16,8 +18,7 @@ Estilo de Formatação
 | 8      | Oculto                  |
 | 9      | Tachado                 |
 
-
-Cores de Texto
+### Cores de Texto
 | Código | Cor          |
 | ------ | ------------ |
 | 30     | Preto        |
@@ -29,7 +30,7 @@ Cores de Texto
 | 36     | Ciano        |
 | 37     | Branco       |
 
-Cores de Fundo
+### Cores de Fundo
 | Código | Cor          |
 | ------ | ------------ |
 | 40     | Preto        |
@@ -41,7 +42,7 @@ Cores de Fundo
 | 46     | Ciano        |
 | 47     | Branco       |
 
-Versões Brilhantes de Texto
+### Versões Brilhantes de Texto
 | Código | Cor              |
 | ------ | ---------------- |
 | 90     | Cinza Escuro     |
@@ -53,7 +54,7 @@ Versões Brilhantes de Texto
 | 96     | Ciano Claro      |
 | 97     | Branco Brilhante |
 
-Fundo Brilhante
+### Fundo Brilhante
 | Código | Cor              |
 | ------ | ---------------- |
 | 100    | Cinza            |
@@ -65,7 +66,9 @@ Fundo Brilhante
 | 106    | Ciano Claro      |
 | 107    | Branco Brilhante |
 
-Exemplo em Código:
+</center>
+
+**Exemplo em Código:**
 ```
 cores = {
     'limpa': '\033[m',
@@ -77,9 +80,10 @@ cores = {
     'ciano': '\033[36m',
     'branco': '\033[37m'
 }
+print(f"{cores['azul']}Operação realizada com sucesso!{cores['vermelho']}")
 ```
-
 Sites:
 
 https://codigopython.blogs.sapo.pt/cores-no-terminal-59499
+
 https://raccoon.ninja/pt/post/dev/tabela-de-cores-ansi-python/
